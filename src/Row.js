@@ -20,7 +20,7 @@ function Row({title, fetchUrl, isLargeRow}) {
     },[fetchUrl])
 
 
-    console.table(movies)
+    //console.table(movies)
 
     return(
         <div className="row">
