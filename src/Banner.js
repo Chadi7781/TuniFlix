@@ -27,6 +27,12 @@ function Banner(){
 
     
     console.log(movie);
+
+    function truncate(str,n) {
+
+        return str?.length > n ? str.substring(0, n-1) + "..." : str;
+
+    }
     
     return (
         <header className="banner"
@@ -43,18 +49,22 @@ function Banner(){
             {/*Title*/}
             <h1 className="banner__title">{movie?.title ||movie?.name ||movie?.original_name}</h1>
             <div className="banner__buttons">
-                <button className="banner_button">Play</button>
-                <button className="banner_button">My List</button>
+                <button className="banner__button">Play</button>
+                <button className="banner__button">My List</button>
                 
             </div>
             <h1 className="banner__description">
-                {movie?.overview}
+                {truncate(movie?.overview,150)}
 
             </h1>
             {/*div >2 buttons*/}
             {/*Description*/}
 
         </div>
+
+        <div className="banner--fadeBottom"/>
+            
+        
          
         </header>
 

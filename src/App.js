@@ -13,7 +13,6 @@ function App() {
       {/*Banner*/}
       <Banner/>
       
-      <h1>Hey Let's build Tuniflix</h1>
       <Row title="TUNIFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals}
       isLargeRow
       ></Row>
